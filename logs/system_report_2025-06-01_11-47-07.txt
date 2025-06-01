@@ -1,0 +1,54 @@
+🖥️ System Health Report - Sun Jun  1 11:47:07 PDT 2025
+---------------------------------------------
+🧠 Memory Usage:
+Pages free:                                3510.
+Pages active:                            204980.
+Pages inactive:                          204307.
+Pages speculative:                           71.
+Pages throttled:                              0.
+Pages wired down:                        122964.
+Pages purgeable:                            430.
+Pages copy-on-write:                   12266567.
+Pages zero filled:                    582534241.
+Pages reactivated:                    751012088.
+Pages purged:                          21765458.
+Pages stored in compressor:             1709686.
+Pages occupied by compressor:            473309.
+
+💾 Disk Usage:
+Filesystem                                         Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s3s1                                    460Gi    12Gi    30Gi    30%    404k  315M    0%   /
+devfs                                             211Ki   211Ki     0Bi   100%     730     0  100%   /dev
+/dev/disk3s6                                      460Gi   7.0Gi    30Gi    19%       7  315M    0%   /System/Volumes/VM
+/dev/disk3s4                                      460Gi    11Gi    30Gi    28%    1.5k  315M    0%   /System/Volumes/Preboot
+/dev/disk3s2                                      460Gi   714Mi    30Gi     3%     295  315M    0%   /System/Volumes/Update
+/dev/disk1s2                                      500Mi   6.0Mi   481Mi     2%       1  4.9M    0%   /System/Volumes/xarts
+/dev/disk1s1                                      500Mi   6.2Mi   481Mi     2%      41  4.9M    0%   /System/Volumes/iSCPreboot
+/dev/disk1s3                                      500Mi   2.4Mi   481Mi     1%      56  4.9M    0%   /System/Volumes/Hardware
+/dev/disk3s1                                      460Gi   397Gi    30Gi    93%    2.5M  315M    1%   /System/Volumes/Data
+map auto_home                                       0Bi     0Bi     0Bi   100%       0     0     -   /System/Volumes/Data/home
+/dev/disk3s3                                      460Gi    12Gi    30Gi    30%    405k  315M    0%   /System/Volumes/Update/mnt1
+/dev/disk4s1                                       48Mi    40Mi   8.3Mi    83%     192  4.3G    0%   /Volumes/AnyDesk
+/Users/kevindiep/Desktop/Visual Studio Code.app   460Gi   394Gi    34Gi    93%    2.4M  358M    1%   /private/var/folders/ls/nv_9yk194f57w3v9jlk0p4qh0000gn/T/AppTranslocation/61291483-1148-417C-B48B-4AA2AB843D49
+
+📈 CPU Load & Uptime:
+11:47  up 5 days, 16:32, 1 user, load averages: 3.01 3.55 4.75
+
+🚀 Startup Items:
+com.coccoc.CocCocUpdater.wake.plist
+com.coccoc.keystone.agent.plist
+com.coccoc.keystone.xpcservice.plist
+com.google.GoogleUpdater.wake.plist
+com.google.keystone.agent.plist
+com.google.keystone.xpcservice.plist
+com.riot.riotclient.checkinstalls.plist
+com.valvesoftware.steamclean.plist
+homebrew.mxcl.mongodb-community.plist
+
+⚙️ Running Processes (Top 5):
+kevindiep        65460 101.9  0.7 412962032 116352   ??  R    10:11PM 427:34.01 /Applications/Messenger.app/Contents/MacOS/Messenger
+kevindiep        85510   8.7  0.2 410345712  27840   ??  S    11:46AM   0:00.12 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+kevindiep          582   7.9  0.3 412266352  56352   ??  S    Mon07PM   8:01.28 /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder
+_windowserver      372   4.4  0.5 414073536  76352   ??  Ss   Mon07PM 644:14.49 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer -daemon
+kevindiep        22783   4.2  4.6 416569312 780128   ??  S    Wed10AM 309:08.14 /Applications/UTM.app/Contents/XPCServices/QEMUHelper.xpc/Contents/MacOS/QEMULauncher.app/Contents/MacOS/QEMULauncher /Applications/UTM.app/Contents/Frameworks/qemu-aarch64-softmmu.framework/Versions/A/qemu-aarch64-softmmu -L /Users/kevindiep/Library/Containers/com.utmapp.UTM/Data/Library/Caches/qemu -S -spice unix=on,addr=48A01EE2-E969-4318-8031-0B8FA9A09494.spice,disable-ticketing=on,image-compression=off,playback-compression=off,streaming-video=off,gl=on -chardev spiceport,name=org.qemu.monitor.qmp.0,id=org.qemu.monitor.qmp -mon chardev=org.qemu.monitor.qmp,mode=control -nodefaults -vga none -device virtio-net-pci,mac=A2:75:11:1F:4E:75,netdev=net0 -netdev vmnet-bridged,id=net0,ifname=en0 -device virtio-ramfb-gl -cpu host -smp cpus=4,sockets=1,cores=4,threads=1 -machine virt -accel hvf -drive if=pflash,format=raw,unit=0,file.filename=/Users/kevindiep/Library/Containers/com.utmapp.UTM/Data/Library/Caches/qemu/edk2-aarch64-secure-code.fd,file.locking=off,readonly=on -drive if=pflash,unit=1,file=/Users/kevindiep/Library/Containers/com.utmapp.UTM/Data/Documents/Windows.utm/Data/efi_vars.fd -m 4096 -audiodev spice,id=audio0 -device intel-hda -device hda-duplex,audiodev=audio0 -device nec-usb-xhci,id=usb-bus -device usb-tablet,bus=usb-bus.0 -device usb-mouse,bus=usb-bus.0 -device usb-kbd,bus=usb-bus.0 -device qemu-xhci,id=usb-controller-0 -chardev spicevmc,name=usbredir,id=usbredirchardev0 -device usb-redir,chardev=usbredirchardev0,id=usbredirdev0,bus=usb-controller-0.0 -chardev spicevmc,name=usbredir,id=usbredirchardev1 -device usb-redir,chardev=usbredirchardev1,id=usbredirdev1,bus=usb-controller-0.0 -chardev spicevmc,name=usbredir,id=usbredirchardev2 -device usb-redir,chardev=usbredirchardev2,id=usbredirdev2,bus=usb-controller-0.0 -device usb-storage,drive=drive3190730C-E3D2-4F9B-8B5D-19279AAA11CF,removable=true,bootindex=0,bus=usb-bus.0 -drive if=none,media=cdrom,id=drive3190730C-E3D2-4F9B-8B5D-19279AAA11CF,file.filename=/Users/kevindiep/Documents/khoa/utm-guest-tools-0.229.2.iso,file.locking=off,readonly=on -device nvme,drive=drive5EBD0F76-6A1D-4AB2-A265-68C83292A542,serial=5EBD0F76-6A1D-4AB2-A265-68C83292A542,bootindex=1 -drive if=none,media=disk,id=drive5EBD0F76-6A1D-4AB2-A265-68C83292A542,file.filename=/Users/kevindiep/Library/Containers/com.utmapp.UTM/Data/Documents/Windows.utm/Data/5EBD0F76-6A1D-4AB2-A265-68C83292A542.qcow2,discard=unmap,detect-zeroes=unmap -device virtio-serial -device virtserialport,chardev=org.qemu.guest_agent,name=org.qemu.guest_agent.0 -chardev spiceport,name=org.qemu.guest_agent.0,id=org.qemu.guest_agent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0 -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=charchannel1,id=channel1,name=org.spice-space.webdav.0 -chardev spiceport,name=org.spice-space.webdav.0,id=charchannel1 -name Windows -uuid 48A01EE2-E969-4318-8031-0B8FA9A09494 -rtc base=localtime -device virtio-rng-pci -chardev socket,id=chrtpm0,path=48A01EE2-E969-4318-8031-0B8FA9A09494.swtpm -tpmdev emulator,id=tpm0,chardev=chrtpm0 -device tpm-crb-device,tpmdev=tpm0
+kevindiep          936   3.0  3.7 436232480 618544   ??  S    Mon07PM 908:57.57 /Applications/Firefox.app/Contents/MacOS/firefox
