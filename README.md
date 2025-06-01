@@ -1,4 +1,4 @@
-🖥️ System Health Check Script for IT Support | Bash Script for macOS
+## 🖥️ System Health Check Script for IT Support | Bash Script for macOS
 
 A professional, automated Bash script that collects key system diagnostics and generates a detailed health report — tailored for IT Support environments.
 
