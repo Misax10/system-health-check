@@ -42,6 +42,7 @@ system-health-check/
 
 You can run this script manually or set it to run automatically every day.
 
+📄 View the [Crontab Setup](crontab-setup.md)
 ### 🔹 Manual Run
 ```bash
 chmod +x health_check.sh
